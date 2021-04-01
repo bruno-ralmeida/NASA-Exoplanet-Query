@@ -1,4 +1,4 @@
-## NASA Exoplanet Query 🚀🚀👨🏿‍🚀
+## NASA Exoplanet Query 🚀🚀👨🏿‍🚀👩🏻‍🚀👨🏻‍🚀
 
 > Projeto baseado no repositório [app-ideas 📚](https://github.com/florinpop17/app-ideas/blob/master/Projects/3-Advanced/NASA-Exoplanet-Query.md)
 <br><br>
