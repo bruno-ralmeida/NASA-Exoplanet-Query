@@ -1,0 +1,24 @@
+{
+  "name": "nasa-exoplanet-query",
+  "version": "1.0.0",
+  "description": "Desde 1992, mais de 4.000 exoplanetas foram descobertos fora do nosso sistema solar. A Administração Nacional de Aeronáutica e Espaço dos Estados Unidos (NASA) mantém um arquivo acessível publicamente dos dados coletados sobre estes em formato de valor separado de vírgula (CSV).O objetivo do aplicativo NASA Exoplanet Query é disponibilizar esses dados para consultas simples por seus usuários.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bruno-ralmeida/NASA-Exoplanet-Query.git"
+  },
+  "author": "Bruno Souza, Bruno Almeida, Thiago Duarte, João Luiz, Karina Prandini",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bruno-ralmeida/NASA-Exoplanet-Query/issues"
+  },
+  "homepage": "https://github.com/bruno-ralmeida/NASA-Exoplanet-Query#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7"
+  }
+}

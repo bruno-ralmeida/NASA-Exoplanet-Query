@@ -1,0 +1,38 @@
+version: "3"
+
+services:
+  mongodb:
+    image: mongo
+    networks:
+      - dev-network
+  api-node:
+    build:
+      dockerfile: ./api-nasa/node.dockerfile
+      context: .
+    volumes:
+      - ./api-nasa:/usr/node-app
+    ports:
+      - "3333:3000"
+    image: node-exoplanet
+    container_name: container-node01
+    networks:
+      - dev-network
+    # depends_on:
+    #   - "mongodb"
+  app:
+    build:
+      dockerfile: ./app/exoplanet-nasa.dockerfile
+      context: .
+    volumes:
+      - ./app:/usr/react-app
+    ports:
+      - "3000:3000"
+    image: react-exoplanet
+    container_name: container-react
+    networks:
+      - dev-network
+    # depends_on:
+    #   - "api-node"
+networks:
+  dev-network:
+    driver: "bridge"
