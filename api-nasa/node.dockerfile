@@ -1,13 +1,13 @@
 FROM node:alpine
 WORKDIR /usr/node-app
 
-COPY package*.json /usr/node-app
+COPY ./ /usr/node-app
 
 RUN npm install -g npm@7.8.0
 RUN npm install
 
-COPY . /usr/node-app
+COPY . . 
 
 EXPOSE 3000
-ENTRYPOINT npm start
+CMD [ "npm","start" ]
 
