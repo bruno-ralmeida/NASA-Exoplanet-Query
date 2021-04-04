@@ -3,6 +3,11 @@
 > Projeto baseado no repositório [app-ideas 📚](https://github.com/florinpop17/app-ideas/blob/master/Projects/3-Advanced/NASA-Exoplanet-Query.md)
 <br><br>
 
+### Requisitos e restrições
+O desenvolvedor deve implementar um meio de carregar de forma eficiente os dados CSV do exoplaneta obtidos da NASA para minimizar quaisquer atrasos quando o aplicativo for iniciado.
+Da mesma forma, o desenvolvedor deve utilizar uma estrutura de dados e mecanismo de pesquisa que minimiza o tempo necessário para consultar os dados do exoplaneta e exibir os resultados.
+O desenvolvedor precisará revisar a documentação do arquivo do exoplaneta para entender o formato dos campos de dados.
+
 ### Histórias do usuário
 <br>
 
