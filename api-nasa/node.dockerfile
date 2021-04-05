@@ -1,12 +1,11 @@
 FROM node:alpine
-WORKDIR /usr/node-app
+WORKDIR /usr/node-app/
 
-COPY ./ /usr/node-app
+COPY ./package*.json ./
 
-RUN npm install -g npm@7.8.0
-RUN npm install
+RUN npm install 
 
-COPY . . 
+COPY . .
 
 EXPOSE 3000
 CMD [ "npm","start" ]

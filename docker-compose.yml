@@ -7,10 +7,11 @@ services:
       - dev-network
   api-node:
     build:
-      dockerfile: ./api-nasa/node.dockerfile
-      context: .
+      dockerfile: node.dockerfile
+      context: ./api-nasa/
     volumes:
       - ./api-nasa:/usr/node-app
+      - /usr/node-app/node_modules
     ports:
       - "3333:3000"
     image: node-exoplanet
@@ -21,10 +22,11 @@ services:
     #   - "mongodb"
   app:
     build:
-      dockerfile: ./app/exoplanet-nasa.dockerfile
-      context: .
+      dockerfile: exoplanet-nasa.dockerfile
+      context: ./app/
     volumes:
       - ./app:/usr/react-app
+      - /usr/react-app/node_modules
     ports:
       - "3000:3000"
     image: react-exoplanet

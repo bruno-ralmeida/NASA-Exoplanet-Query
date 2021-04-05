@@ -1,12 +1,10 @@
-FROM node:alpine
-WORKDIR /usr/react-app
+FROM node:14
+WORKDIR /usr/react-app/
 
-COPY ./ /usr/react-app
+COPY ./package*.json ./
 
-RUN npm install -g npm@7.8.0
-RUN npm install
-
-COPY . /usr/react-app
+RUN npm install 
+COPY . .
 
 EXPOSE 3000
 CMD [ "npm","start" ]
