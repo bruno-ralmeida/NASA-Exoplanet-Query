@@ -3,7 +3,7 @@ WORKDIR /react-app/
 
 COPY ./package*.json ./
 
-RUN npm install -g --unsafe-perm=true --allow-root
+RUN npm install 
 COPY . .
 
 EXPOSE 3000
