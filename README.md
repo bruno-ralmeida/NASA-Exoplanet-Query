@@ -9,7 +9,7 @@
 ## Tecnologias Utilizadas
 
 - [Docker 🐳](https://www.docker.com/)
-- [NodeJs ⚡](https://nodejs.org/en/)
+- [NodeJs ⬢](https://nodejs.org/en/)
 - [ReactJs ⚛](https://reactjs.org/)
 - [Mongo 🪑🎲](https://www.mongodb.com/)
 

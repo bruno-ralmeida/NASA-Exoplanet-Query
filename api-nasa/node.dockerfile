@@ -1,5 +1,5 @@
 FROM node:alpine
-WORKDIR /usr/node-app/
+WORKDIR /node-app/
 
 COPY ./package*.json ./
 

@@ -1,4 +1,4 @@
-version: "3"
+version: "3.7"
 
 services:
   mongodb:
@@ -10,31 +10,31 @@ services:
       dockerfile: node.dockerfile
       context: ./api-nasa/
     volumes:
-      - ./api-nasa:/usr/node-app
-      - /usr/node-app/node_modules
+      - ./api-nasa:/node-app
+      - /node-app/node_modules
     ports:
       - "3333:3000"
     image: node-exoplanet
     container_name: container-node01
     networks:
       - dev-network
-    # depends_on:
-    #   - "mongodb"
+    depends_on:
+      - "mongodb"
   app:
     build:
       dockerfile: exoplanet-nasa.dockerfile
       context: ./app/
     volumes:
-      - ./app:/usr/react-app
-      - /usr/react-app/node_modules
+      - ./app:/react-app
+      - /react-app/node_modules
     ports:
       - "3000:3000"
     image: react-exoplanet
     container_name: container-react
     networks:
       - dev-network
-    # depends_on:
-    #   - "api-node"
+    depends_on:
+      - "api-node"
 networks:
   dev-network:
     driver: "bridge"

@@ -1,5 +1,5 @@
 FROM node:alpine
-WORKDIR /usr/react-app/
+WORKDIR /react-app/
 
 COPY ./package*.json ./
 
